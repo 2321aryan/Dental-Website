@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Testimonials | BrightSmile Dental Clinic</title>
+    <meta name="description" content="Read our patient reviews and testimonials. See why BrightSmile is the top-rated dental clinic in the area.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #f1f3f5;
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        .review-text::before {
+            content: "\201C"; /* Left double quote */
+            font-size: 3rem;
+            color: rgba(0, 119, 182, 0.1);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-family: serif;
+        }
+
+        .patient-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-top: 1px solid #e9ecef;
+            padding-top: 1.5rem;
+        }
+
+        .patient-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--bg-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .patient-details h4 {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        .patient-details span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        .cta-section {
+            background-color: var(--bg-light);
+            padding: 5rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #fafbfc;">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i> BrightSmile
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html" style="color: var(--primary-color);">Reviews</a>
+                <a href="blog.html">Tips</a>
+                <a href="contact.html">Contact</a>
+                <a href="book-appointment.html" class="btn btn-primary">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 style="color:white;">Patient Reviews</h1>
+            <p style="color:rgba(255,255,255,0.8); font-size:1.2rem; max-width: 600px; margin: 0 auto;">Don't just take our word for it. See what our patients have to say about their experience.</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="testimonials-grid">
+            
+            <!-- Review 1 -->
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">I hadn't been to the dentist in years due to severe anxiety. Dr. Smith and the team at BrightSmile completely changed my perspective. They were patient, explained everything clearly, and the root canal was practically painless. Highly recommended!</p>
+                <div class="patient-info">
+                    <div class="patient-avatar">MS</div>
+                    <div class="patient-details">
+                        <h4>Michael S.</h4>
+                        <span>Root Canal Patient</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">The best dental clinic in the city! I got my teeth whitened here before my wedding, and the results were phenomenal. The staff is always smiling and the clinic is immaculately clean.</p>
+                <div class="patient-info">
+                    <div class="patient-avatar">ER</div>
+                    <div class="patient-details">
+                        <h4>Emily R.</h4>
+                        <span>Cosmetic Patient</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">I bring my whole family here. They are fantastic with kids and make the biannual checkups a breeze. Booking an appointment is simple, and they never make you wait long in the lobby.</p>
+                <div class="patient-info">
+                    <div class="patient-avatar">JP</div>
+                    <div class="patient-details">
+                        <h4>Jason P.</h4>
+                        <span>Family checkup</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="review-text">I got a dental implant done recently. The process was clearly outlined from day one. I felt very informed and cared for throughout all the stages. The final result looks perfectly natural.</p>
+                <div class="patient-info">
+                    <div class="patient-avatar">DW</div>
+                    <div class="patient-details">
+                        <h4>David W.</h4>
+                        <span>Implant Patient</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review 5 -->
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">Professional, efficient, and very transparent about pricing. No hidden fees. The hygienist was very gentle during my deep cleaning. I actually look forward to my next dentist visit now.</p>
+                <div class="patient-info">
+                    <div class="patient-avatar">AL</div>
+                    <div class="patient-details">
+                        <h4>Amanda L.</h4>
+                        <span>General Care</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="color: var(--primary-color)">Ready for your own BrightSmile experience?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Join hundreds of happy patients and take the first step towards perfect oral health.</p>
+            <a href="book-appointment.html" class="btn btn-primary btn-lg" style="padding: 1rem 3rem; font-size: 1.1rem;">Book Your Appointment Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none; padding-top: 0;">
+                <p>&copy; 2024 BrightSmile Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

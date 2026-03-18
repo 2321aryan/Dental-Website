@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Dentist | BrightSmile Dental Clinic</title>
+    <meta name="description" content="Learn about our experienced dentist, our clinic philosophy, and our commitment to providing top-quality dental care in a welcoming environment.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+
+        .profile-image-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .profile-content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .qualifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .qual-card {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .qual-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .philosophy {
+            background-color: var(--bg-light);
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i> BrightSmile
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" style="color: var(--primary-color);">About</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html">Reviews</a>
+                <a href="blog.html">Tips</a>
+                <a href="contact.html">Contact</a>
+                <a href="book-appointment.html" class="btn btn-primary">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 style="color:white;">About Our Practice</h1>
+            <p style="color:rgba(255,255,255,0.8); font-size:1.2rem; max-width: 600px; margin: 0 auto;">Dedicated to excellence in cosmetic, restorative, and general dentistry.</p>
+        </div>
+    </div>
+
+    <section class="section container">
+        <div class="profile-section">
+            <div class="profile-image-container">
+                <img src="images/dentist_profile_1773500230418.png" alt="Dr. John Smith - Lead Dentist" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="book-appointment.html" class="btn btn-primary" style="width: 100%;">Schedule with Dr. Smith</a>
+                </div>
+            </div>
+            
+            <div class="profile-content">
+                <h2 style="color: var(--primary-color)">Meet Dr. John Smith</h2>
+                <h3 style="color: var(--secondary-color); font-weight: 500;">DDS, MS - Lead Dental Surgeon</h3>
+                
+                <p style="font-size: 1.1rem; margin-top: 1.5rem;">With over 15 years of dedicated experience in comprehensive dental care, Dr. Smith is passionate about helping patients achieve and maintain their perfect smiles. He believes in a gentle, patient-first approach to dentistry.</p>
+                
+                <p>After graduating top of his class from the prestigious Dental School, he pursued specialized training in Cosmetic Dentistry and Dental Implants. His commitment to continuing education allows him to bring the latest, most effective treatments to BrightSmile Clinic.</p>
+
+                <h3 style="margin-top: 2.5rem; color: var(--text-dark);">Qualifications & Expertise</h3>
+                <div class="qualifications-grid">
+                    <div class="qual-card">
+                        <h4>DDS Degree</h4>
+                        <p style="margin:0; font-size:0.9rem;">Doctor of Dental Surgery from State University, 2008</p>
+                    </div>
+                    <div class="qual-card">
+                        <h4>15+ Years</h4>
+                        <p style="margin:0; font-size:0.9rem;">Extensive practical experience in modern dentistry</p>
+                    </div>
+                    <div class="qual-card">
+                        <h4>Board Certified</h4>
+                        <p style="margin:0; font-size:0.9rem;">Member of the American Dental Association</p>
+                    </div>
+                    <div class="qual-card">
+                        <h4>Implant Specialist</h4>
+                        <p style="margin:0; font-size:0.9rem;">Fellowship in Oral Implantology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="philosophy">
+        <div class="container text-center">
+            <h2 style="color: var(--primary-color)">Our Clinic Philosophy</h2>
+            <div style="width: 80px; height: 3px; background-color: var(--secondary-color); margin: 1rem auto 2rem;"></div>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+                "We believe that a healthy smile is the foundation of overall well-being. Our mission is to provide exceptional, anxiety-free dental care in a relaxing environment. We prioritize patient education, empowering you to make informed decisions about your oral health."
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1.5rem; display: inline-block;">
+                        <i class="fas fa-tooth"></i> BrightSmile
+                    </a>
+                    <p>Providing world-class comprehensive dental care in a comfortable and friendly environment.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Dental Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: #adb5bd;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Dental Street, Medical District</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone" style="margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="margin-right: 10px;"></i> contact@brightsmile.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Working Hours</h3>
+                    <ul class="footer-links" style="color: #adb5bd;">
+                        <li style="display:flex; justify-content:space-between;"><span>Mon - Fri:</span> <span>8:00 AM - 6:00 PM</span></li>
+                        <li style="display:flex; justify-content:space-between;"><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+                        <li style="display:flex; justify-content:space-between;"><span>Sunday:</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrightSmile Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

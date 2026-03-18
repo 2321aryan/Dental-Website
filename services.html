@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Services | BrightSmile</title>
+    <meta name="description" content="Explore our dental services: Teeth Cleaning, Dental Implants, Root Canal Treatment, Braces, and Cosmetic Dentistry.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .service-detail-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+            padding-bottom: 5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .service-detail-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .service-detail-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .service-image-placeholder {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            font-size: 5rem;
+            color: var(--secondary-color);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .benefit-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .benefit-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .benefit-list i {
+            color: var(--secondary-color);
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i> BrightSmile
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" style="color: var(--primary-color);">Services</a>
+                <a href="testimonials.html">Reviews</a>
+                <a href="blog.html">Tips</a>
+                <a href="contact.html">Contact</a>
+                <a href="book-appointment.html" class="btn btn-primary">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 style="color:white;">Our Dental Services</h1>
+            <p style="color:rgba(255,255,255,0.8); font-size:1.2rem; max-width: 600px; margin: 0 auto;">Comprehensive care tailored to your unique smile.</p>
+        </div>
+    </div>
+
+    <section class="section container">
+        
+        <!-- Service 1: Teeth Cleaning -->
+        <div class="service-detail-card" id="cleaning">
+            <div class="service-info">
+                <h2 style="color: var(--primary-color)">Professional Teeth Cleaning</h2>
+                <p>Routine dental cleanings are the cornerstone of good oral hygiene. Our gentle hygienists use advanced ultrasonic scalers to remove plaque and tartar build-up that regular brushing misses, preventing cavities and gum disease.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Key Benefits:</h4>
+                <ul class="benefit-list">
+                    <li><i class="fas fa-check"></i> Prevents tooth decay and cavities</li>
+                    <li><i class="fas fa-check"></i> Stops gum disease progression</li>
+                    <li><i class="fas fa-check"></i> Brightens your smile by removing stains</li>
+                    <li><i class="fas fa-check"></i> Freshens breath</li>
+                </ul>
+                
+                <a href="book-appointment.html?treatment=cleaning" class="btn btn-primary" style="margin-top: 1rem;">Book Cleaning</a>
+            </div>
+            <div class="service-image-placeholder">
+                <i class="fas fa-teeth"></i>
+            </div>
+        </div>
+
+        <!-- Service 2: Dental Implants -->
+        <div class="service-detail-card" id="implants">
+            <div class="service-info">
+                <h2 style="color: var(--primary-color)">Dental Implants</h2>
+                <p>Dental implants are the most natural-looking and durable solution for missing teeth. We use premium titanium posts that fuse with your jawbone, providing a permanent foundation for a custom-crafted crown.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Key Benefits:</h4>
+                <ul class="benefit-list">
+                    <li><i class="fas fa-check"></i> Looks, feels, and functions like a natural tooth</li>
+                    <li><i class="fas fa-check"></i> Prevents bone loss in the jaw</li>
+                    <li><i class="fas fa-check"></i> Permanent, long-lasting solution</li>
+                    <li><i class="fas fa-check"></i> Restores full chewing power</li>
+                </ul>
+                
+                <a href="book-appointment.html?treatment=implants" class="btn btn-primary" style="margin-top: 1rem;">Consult for Implants</a>
+            </div>
+            <div class="service-image-placeholder">
+                <i class="fas fa-tooth"></i>
+            </div>
+        </div>
+
+        <!-- Service 3: Root Canal -->
+        <div class="service-detail-card" id="root-canal">
+            <div class="service-info">
+                <h2 style="color: var(--primary-color)">Root Canal Treatment</h2>
+                <p>Don't let tooth pain disrupt your life. Our modern, virtually painless root canal treatments save severely infected or damaged teeth. We use the latest rotary endodontics for efficient, comfortable care that relieves pain instantly.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Key Benefits:</h4>
+                <ul class="benefit-list">
+                    <li><i class="fas fa-check"></i> Eliminates intense tooth pain and infection</li>
+                    <li><i class="fas fa-check"></i> Saves your natural tooth from extraction</li>
+                    <li><i class="fas fa-check"></i> Prevents infection from spreading</li>
+                    <li><i class="fas fa-check"></i> Efficient and comfortable procedure</li>
+                </ul>
+                
+                <a href="book-appointment.html?treatment=root-canal" class="btn btn-primary" style="margin-top: 1rem;">Book Appointment</a>
+            </div>
+            <div class="service-image-placeholder">
+                <i class="fas fa-microscope"></i>
+            </div>
+        </div>
+
+        <!-- Service 4: Braces -->
+        <div class="service-detail-card" id="braces">
+            <div class="service-info">
+                <h2 style="color: var(--primary-color)">Orthodontics (Braces)</h2>
+                <p>Achieve straight teeth and a properly aligned bite. We offer traditional metal braces, clear ceramic braces, and invisible aligners tailored for both teenagers and adults.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Key Benefits:</h4>
+                <ul class="benefit-list">
+                    <li><i class="fas fa-check"></i> Corrects crooked teeth and bite issues</li>
+                    <li><i class="fas fa-check"></i> Improves jaw function and speech</li>
+                    <li><i class="fas fa-check"></i> Makes teeth easier to clean</li>
+                    <li><i class="fas fa-check"></i> Boosts self-confidence with a straight smile</li>
+                </ul>
+                
+                <a href="book-appointment.html?treatment=braces" class="btn btn-primary" style="margin-top: 1rem;">Consult for Orthodontics</a>
+            </div>
+            <div class="service-image-placeholder">
+                <i class="fas fa-smile-beam"></i>
+            </div>
+        </div>
+
+        <!-- Service 5: Cosmetic Dentistry -->
+        <div class="service-detail-card" id="cosmetic">
+            <div class="service-info">
+                <h2 style="color: var(--primary-color)">Cosmetic Dentistry</h2>
+                <p>Transform your smile into a masterpiece. From professional teeth whitening to custom porcelain veneers, we design smiles that fit your face perfectly, boosting your confidence immediately.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Key Benefits:</h4>
+                <ul class="benefit-list">
+                    <li><i class="fas fa-check"></i> Dramatically improves smile aesthetics</li>
+                    <li><i class="fas fa-check"></i> Fixes chipped, stained, or gapped teeth</li>
+                    <li><i class="fas fa-check"></i> Customizable shades for a natural look</li>
+                    <li><i class="fas fa-check"></i> Fast results for special occasions</li>
+                </ul>
+                
+                <a href="book-appointment.html?treatment=cosmetic" class="btn btn-primary" style="margin-top: 1rem;">Design Your Smile</a>
+            </div>
+            <div class="service-image-placeholder">
+                <i class="fas fa-magic"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1.5rem; display: inline-block;">
+                        <i class="fas fa-tooth"></i> BrightSmile
+                    </a>
+                    <p>Providing world-class comprehensive dental care in a comfortable and friendly environment.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Dental Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: #adb5bd;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Dental Street, Medical District</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone" style="margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="margin-right: 10px;"></i> contact@brightsmile.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Working Hours</h3>
+                    <ul class="footer-links" style="color: #adb5bd;">
+                        <li style="display:flex; justify-content:space-between;"><span>Mon - Fri:</span> <span>8:00 AM - 6:00 PM</span></li>
+                        <li style="display:flex; justify-content:space-between;"><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+                        <li style="display:flex; justify-content:space-between;"><span>Sunday:</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrightSmile Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Auto-scroll logic if hash is present
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

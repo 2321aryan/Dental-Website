@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightSmile Dental Clinic | Trusted Dental Care</title>
+    <meta name="description" content="Top-rated dental clinic offering teeth cleaning, dental implants, braces, root canal treatments, and cosmetic dentistry. Book your appointment today!">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('images/hero_bg_1773500211596.png') center/cover;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* Services Overview */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Testimonial Snippet */
+        .testimonial-snippet {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 10px;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i> BrightSmile
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html">Reviews</a>
+                <a href="blog.html">Tips</a>
+                <a href="contact.html">Contact</a>
+                <a href="book-appointment.html" class="btn btn-primary">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Trusted Dental Care for Your Perfect Smile</h1>
+                <p>Experience pain-free, modern, and affordable dental services with our highly qualified experts. Your smile is our priority.</p>
+                <div class="hero-btns">
+                    <a href="book-appointment.html" class="btn btn-primary">Book Appointment</a>
+                    <a href="services.html" class="btn btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="color: var(--primary-color)">Comprehensive Dental Services</h2>
+                <p>We offer a wide range of treatments to cater to all your dental needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-teeth service-icon"></i>
+                    <h3>Teeth Cleaning</h3>
+                    <p>Professional teeth scaling and polishing to prevent cavities and gum disease.</p>
+                    <a href="services.html#cleaning" style="margin-top: 15px; display: inline-block; font-weight: 600;">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-tooth service-icon"></i>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent and natural-looking replacements for missing teeth.</p>
+                    <a href="services.html#implants" style="margin-top: 15px; display: inline-block; font-weight: 600;">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-magic service-icon"></i>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Transform your smile with veneers, whitening, and smile design.</p>
+                    <a href="services.html#cosmetic" style="margin-top: 15px; display: inline-block; font-weight: 600;">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Intro Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="images/dentist_profile_1773500230418.png" alt="Dr. Smith - Lead Dentist" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="color: var(--primary-color)">Meet Your Expert Dentist</h2>
+                    <p>With over 15 years of experience, Dr. Smith leads our team ensuring the highest standard of dental care. We utilize state-of-the-art technology to provide comfortable and efficient treatments.</p>
+                    <ul style="margin: 20px 0; display:flex; flex-direction:column; gap:10px;">
+                        <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Advanced Painless Techniques</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Patient-Centric Approach</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Clean & Sterilized Environment</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline">Read Full Profile</a>
+                </div>
+            </div>
+
+            <!-- Testimonial Snippet -->
+            <div class="testimonial-snippet">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h3 style="color: var(--white); font-style: italic;">"The best dental experience I've ever had. Highly recommend to anyone looking for a friendly and professional team!"</h3>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 0;">- Sarah M.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1.5rem; display: inline-block;">
+                        <i class="fas fa-tooth"></i> BrightSmile
+                    </a>
+                    <p>Providing world-class comprehensive dental care in a comfortable and friendly environment.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Dental Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: #adb5bd;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Dental Street, Medical District</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone" style="margin-right: 10px;"></i> +1 (555) 123-4567</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="margin-right: 10px;"></i> contact@brightsmile.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Working Hours</h3>
+                    <ul class="footer-links" style="color: #adb5bd;">
+                        <li style="display:flex; justify-content:space-between;"><span>Mon - Fri:</span> <span>8:00 AM - 6:00 PM</span></li>
+                        <li style="display:flex; justify-content:space-between;"><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+                        <li style="display:flex; justify-content:space-between;"><span>Sunday:</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrightSmile Dental Clinic. All Rights Reserved. Optimized for Local SEO.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/15551234567" target="_blank" style="position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); z-index: 1000; transition: transform 0.3s ease;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
